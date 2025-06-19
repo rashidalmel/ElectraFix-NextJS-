@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.fourimage-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(20deg, #ef3d2c 0%, #070707 30%);
+}
+
+.fourimage-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.fourimage-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.fourimage-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.image-item {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  transition: flex 0.5s ease;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.image-text p {
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+}
+
+.image-item:hover {
+  flex: 2;
+}
+
+.image-item:hover img {
+  transform: scale(1.1);
+}
+
+.image-item:hover .image-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .fourimage-section {
+    padding: 2rem 1rem;
+  }
+
+  .fourimage-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .fourimage-header {
+    margin: 0 auto 2rem;
+  }
+
+  .image-item {
+    height: 300px;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .image-item:hover {
+    flex: 1;
+  }
+}

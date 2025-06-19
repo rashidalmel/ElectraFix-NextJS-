@@ -1,0 +1,38 @@
+.imageSection {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.imageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.imageWrapper {
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    flex-direction: column;
+  }
+  
+  .imageWrapper {
+    width: 100%;
+  }
+}
