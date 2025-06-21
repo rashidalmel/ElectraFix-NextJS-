@@ -3,6 +3,8 @@ import ImageSection from './components/image'
 import Stats from './components/Stats'
 import FourImage from './components/FourImage'
 import GlassSection from './components/GlassSection'
+import NewSection from './components/sectionsix'
+import HeaderAbout from './components/aboutcomponent/headerabout';
 
 export default function Page() {
   return (
@@ -22,6 +24,7 @@ export default function Page() {
       <Stats />
       <FourImage />
       <GlassSection/>
+      <NewSection />
     </>
   )
 }
