@@ -7,6 +7,7 @@
   padding:  2rem 4rem;
   margin: 0 auto;
   max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .glassSection {
@@ -14,15 +15,16 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, rgba(239, 61, 44, 0.1) 0%, rgba(128,128,128,0.1) 100%);
   box-shadow: 0 8px 32px 0 rgba(193, 10, 10, 0.37);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 2rem;
   max-width: 650px;
   width: 100%;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .glassHeader {
@@ -116,14 +118,20 @@
   color: #ef3d2c;
 }
 
-.engineersImage {
-  height: 995px;
-  width: auto;
-  max-width: 550px;
-  min-height: 400px;
-  padding-right: 2rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  display: block;
+.imageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  max-width: 600px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.engineerImage {
+  width: 100%;
+  /* height: 120vh;  */
   object-fit: cover;
 }
 
@@ -131,40 +139,63 @@
   .glassSectionWrapper {
     flex-direction: column;
     align-items: stretch;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
   }
   .glassSection {
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 1.2rem;
     max-width: 100%;
+    min-width: 0;
   }
-  .engineersImage {
+  .imageContainer {
     max-width: 100%;
-    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     height: auto;
-    min-height: 200px;
-    margin: 1rem 0;
+  }
+  .engineerImage {
+    max-height: 400px;
     display: none;
   }
 }
 
 @media (max-width: 600px) {
+  .glassSectionWrapper {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
   .glassSection {
-    padding: 1rem;
+    padding: 1rem 1rem;
     font-size: 0.95rem;
+    max-width: 100%;
   }
   .glassHeader h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .iconTitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .iconSubtitle {
     padding-right: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
-  .engineersImage {
-    min-height: 120px;
-    display: none;
+  .iconRow {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+  .iconItem {
+    width: 100%;
+    align-items: flex-start;
+    gap: 1.4rem;
+  }
+  .imageContainer {
+    max-width: 100%;
+    margin-top: 1.5rem;
+    height: auto;
+  }
+  .engineerImage {
+    max-height: 220px;
   }
 }

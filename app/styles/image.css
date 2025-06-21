@@ -100,3 +100,33 @@
     transform: translateX(-50%);
   }
 }
+
+main {
+  opacity: 0;
+  transform: translateY(60px);
+  animation: mainFadeIn 1s cubic-bezier(0.40, 1, 0.40, 1) 1s forwards;
+}
+
+@keyframes mainFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-header, .subheader, .button-container {
+  /* Optional: for staggered effect */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: childFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.main-header { animation-delay: 0.3s; }
+.subheader { animation-delay: 0.5s; }
+.button-container { animation-delay: 0.7s; }
+
+@keyframes childFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

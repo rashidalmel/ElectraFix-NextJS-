@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './GlassSection.module.css';
+import styles from '../styles/GlassSection.module.css';
 
 const iconData = [
 	{
@@ -85,11 +85,15 @@ export default function GlassSection() {
 					))}
 				</div>
 			</section>
-			<img
-				src="/both-of-engineers-installing-a-small-robotic-arm-i-2025-01-09-01-19-19-utc.jpg"
-				alt="Engineers installing a robotic arm"
-				className={styles.engineersImage}
-			/>
+			<div className={styles.imageContainer}>
+				<Image
+					src="/both-of-engineers-installing-a-small-robotic-arm-i-2025-01-09-01-19-19-utc.jpg"
+					alt="Engineers working on a robotic arm"
+					width={600}
+					height={800}
+					className={styles.engineerImage}
+				/>
+			</div>
 		</div>
 	);
 }
