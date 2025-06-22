@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap');
+
+.aboutContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.aboutContent {
+  flex: 1;
+}
+
+.aboutImageWrapper {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aboutImage {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.headerAboutTitle {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.headerAboutSubtitle {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.headerAboutBtn {
+  background: linear-gradient(148deg, #ef3d2c 0%, #070707 118%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 1.5rem;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.headerAboutBtn:hover {
+  color: #ff4444;
+  background: #fff;
+}
+
+.glassCard {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  transform: none;
+  width: 260px;
+  padding: 1.5rem 1.2rem;
+  background: rgba(73, 73, 73, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.2px);
+  -webkit-backdrop-filter: blur(12.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.glassCardTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.glassCardSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.glassCardIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.7rem;
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .aboutContainer {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+  .aboutImageWrapper {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .aboutImage {
+    width: 90vw;
+    max-width: 400px;
+    height: 400px;
+  }
+  .glassCard {
+    left: 50%;
+    bottom: 1.5rem;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 220px;
+    padding: 1.2rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutContainer {
+    gap: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+  .aboutImage {
+    width: 100vw;
+    max-width: 95vw;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .glassCard {
+    width: 95vw;
+    max-width: 67vw;
+    left: 50%;
+    bottom: 0.5rem;
+    transform: translateX(-50%);
+    padding: 0.7rem 0.5rem;
+    border-radius: 10px;
+  }
+  .glassCardTitle {
+    font-size: 1rem;
+  }
+  .glassCardSubtitle {
+    font-size: 0.9rem;
+  }
+  .glassCardIcon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.3rem;
+  }
+}
