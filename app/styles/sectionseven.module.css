@@ -1,0 +1,179 @@
+.sectionSevenContainer {
+  /* box-sizing: border-box; */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 4rem; /* Match stats section horizontal padding */
+  height: 100%;
+  min-height: 600px;
+}
+
+.sectionSevenImageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionSevenImage {
+  width: 100%;
+  height: 728px; /* Increased height for desktop */
+  max-width: 100%;
+  /* Removed max-height to prevent squishing */
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sectionSevenGlassCard {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.2px);
+  -webkit-backdrop-filter: blur(12.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 260px;
+  max-width: 600px;
+  min-height: 400px;
+  height: 100%;
+}
+
+.sectionSevenGlassTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.sectionSevenGlassSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.sectionSevenNumbersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.sectionSevenNumberItem {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
+.sectionSevenNumberItem:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: #747474;
+  opacity: 0.18;
+}
+
+.sectionSevenNumberBox {
+  /* Remove the box border */
+  border: none;
+  color: transparent;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  box-shadow: none;
+  transition: color 0.2s;
+  min-width: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 2px;
+  position: relative;
+  font-weight: bold;
+  -webkit-text-stroke: 0.1px #d1d1d1;
+  /* fallback for browsers that don't support text-stroke */
+  text-shadow: 0 0 1.5px #000000, 0 0 1.5px #000000;
+}
+
+.sectionSevenNumberTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.1rem;
+  letter-spacing: 1px;
+}
+
+.sectionSevenNumberSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .sectionSevenContainer {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .sectionSevenImage {
+    width: 90vw;
+    max-width: 350px;
+    height: 360px; /* Increased height for tablet */
+  }
+  .sectionSevenGlassCard {
+    max-width: 95vw;
+    padding: 1.2rem 1rem;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionSevenContainer {
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 2rem 0;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .sectionSevenImage {
+    display: none;
+  }
+  .sectionSevenGlassCard {
+    box-sizing: border-box;
+    padding: 2.2rem 1.2rem 2.5rem 1.2rem;
+    min-height: 200px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 360px;
+  }
+  .sectionSevenGlassTitle {
+    font-size: 2rem;
+  }
+  .sectionSevenGlassSubtitle {
+    font-size: 0.95rem;
+  }
+}

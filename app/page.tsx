@@ -5,6 +5,7 @@ import FourImage from './components/FourImage'
 import GlassSection from './components/GlassSection'
 import NewSection from './components/sectionsix'
 import HeaderAbout from './components/aboutcomponent/headerabout';
+import SectionSeven from './components/sectionseven';
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
       <FourImage />
       <GlassSection/>
       <NewSection />
+      <SectionSeven />
     </>
   )
 }
