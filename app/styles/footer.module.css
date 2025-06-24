@@ -1,0 +1,95 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(20deg, #ef3d2c 0%, #070707 30%);
+  color: #fff;
+  padding: 32px 0 16px 0;
+  border-top: 1px solid #222;
+  font-family: 'Inter', sans-serif;
+  display: block;
+}
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.logo {
+  margin-bottom: 8px;
+}
+
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand {
+  margin-top: 0;
+}
+
+.centerSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+.rightSection {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.footerLink:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footerNavLink {
+  color: #c5c4c4;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footerNavLink:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-top: 24px;
+  padding-bottom: 4px;
+  font-family: 'Inter', sans-serif;
+}

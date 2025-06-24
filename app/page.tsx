@@ -7,6 +7,7 @@ import NewSection from './components/sectionsix'
 import HeaderAbout from './components/aboutcomponent/headerabout';
 import SectionSeven from './components/sectionseven';
 import SectionEight from './components/sectioneight';
+import Footer from './components/Footer'
 
 export default function Page() {
   return (
