@@ -2,6 +2,11 @@ import HeaderAbout from '../components/aboutcomponent/headerabout';
 import Image from 'next/image';
 import styles from '../styles/aboutcss/headerabout.module.css';
 
+export const metadata = { // for SEO
+  title: "About Fast, Reliable Electrical Equipment Repairs | Ahito",
+  description: "From household appliances to industrial machines, we bring your equipment back to life with expert care. Emergency repairs, expert technicians, and trusted service."
+};
+
 export default function AboutPage() {
   return (
     <div className={styles.aboutContainer}>
