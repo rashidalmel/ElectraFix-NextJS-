@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Bebas+Neue:wght@400;700&display=swap');
+
+.sectionEight {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+}
+
+.sectionEightInner {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: #ccc;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.imageRow {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin-left: 0;
+  margin-right: 0;
+  gap: 1rem;
+  padding: 0 1rem;
+  flex-wrap: nowrap;
+}
+
+.image {
+  width: 280px;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background: #000;
+}
+
+.imageItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageOverlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(239,61,44,0.85) 60%, rgba(0,0,0,0.1) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.4s, transform 0.4s;
+  padding: 2rem 1rem 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.imageItem:hover .imageOverlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlayHeader {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.overlayName {
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.overlayRole {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.85;
+  margin-bottom: 0.7rem;
+}
+
+.overlayText {
+ font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  color: #eee;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: background 0.2s;
+}
+
+.socialIcon.facebook { background: #1877f3; }
+.socialIcon.x { background: #000; }
+.socialIcon.instagram { background: #e1306c; }
+
+.socialIcon:hover {
+  filter: brightness(1.2);
+}
+
+@media (max-width: 1200px) {
+  .sectionEight,
+  .sectionEightInner,
+  .imageRow {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image {
+    width: 220px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionEight {
+    padding: 2rem 0.5rem;
+  }
+  .imageRow {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .image {
+    width: 160px;
+    height: 280px;
+  }
+  .imageOverlay {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionEight {
+    padding: 1rem 0.2rem;
+  }
+  .sectionEightInner {
+    margin: 0 auto 1rem;
+  }
+  .imageRow {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  .imageItem {
+    width: 100%;
+    min-width: 0;
+    min-height: 180px;
+  }
+  .image {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .imageOverlay {
+    padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+  }
+  .overlayHeader {
+    margin-bottom: 0.5rem;
+  }
+  .overlayText {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .socialIcons {
+    gap: 0.5rem;
+  }
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}

@@ -31,10 +31,10 @@ export default function Navbar() {
           <Link href="/about" className="nav-link" onClick={() => setMenuOpen(false)}>
             About Us
           </Link>
-          <Link href="/service" className="nav-link" onClick={() => setMenuOpen(false)}>
+          <Link href="/" className="nav-link" onClick={() => setMenuOpen(false)}>
             Service
           </Link>
-          <Link href="/study-case" className="nav-link" onClick={() => setMenuOpen(false)}>
+          <Link href="/" className="nav-link" onClick={() => setMenuOpen(false)}>
             Study Case
           </Link>
           <div className="dropdown">
